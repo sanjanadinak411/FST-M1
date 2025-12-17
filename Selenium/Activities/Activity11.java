@@ -15,30 +15,27 @@ package selenium;
 	        WebDriver driver = new FirefoxDriver();
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	        // Open the browser
+	     
 	        driver.get("https://www.training-support.net/webelements/dynamic-controls");
-
-	        // Verify page title
 	        System.out.println("Page title is: " + driver.getTitle());
 
-	        // Find the checkbox and make sure it is visible
+	        
 	        WebElement checkbox = driver.findElement(By.id("checkbox"));
 	        System.out.println("Checkbox is visible? " + checkbox.isDisplayed());
 
-	        // Find the button to toggle it and click it
+	       
 	        driver.findElement(By.xpath("//button[text()='Toggle Checkbox']")).click();
-	        // Wait for it to disappear
 	        wait.until(ExpectedConditions.invisibilityOf(checkbox));
-	        // Check if it is visible
+	        
 	        System.out.println("Checkbox is visible? " + checkbox.isDisplayed());
 	        
-	        // Toggle the checkbox and click it
+	 
 	        driver.findElement(By.xpath("//button[text()='Toggle Checkbox']")).click();
 	        wait.until(ExpectedConditions.elementToBeClickable(checkbox)).click();
 	        // Check if it is selected
 	        System.out.println("Checkbox is selected? " + checkbox.isSelected());
 
-	        // Close the browser
+
 	        driver.quit();
 	    }
 	}
