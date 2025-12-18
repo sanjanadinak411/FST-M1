@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="selenium_TestNG" thread-count="4" parallel="classes">
+    <!-- Comment out groups to run everything -->
+	
+    <test name="selenium_TestNG">
+        <classes>
+            <class name="selenium_TestNG.Activity1" />
+            <class name="selenium_TestNG.Activity2" />
+            <class name="selenium_TestNG.Activity3" />
+        </classes>
+    </test>
+</suite>
+
+
