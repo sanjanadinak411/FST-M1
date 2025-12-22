@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="suite test">
+     <test name="jobs">
+      
+      	<classes>
+         <class name="alchemyJobs.Activity1" /> 
+         <class name="alchemyJobs.Activity2" /> 
+         <class name="alchemyJobs.Activity3" />
+         <class name="alchemyJobs.Activity4" />
+         <class name="alchemyJobs.Activity5" />
+         <class name="alchemyJobs.Activity6" />
+         <class name="alchemyJobs.Activity7" />
+         <class name="alchemyJobs.Activity8" />
+        </classes>  
+    </test>
+      
+</suite>
